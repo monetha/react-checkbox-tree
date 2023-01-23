@@ -143,7 +143,6 @@ class NodeModel {
 
         if (percolateUpward && flatNode.children && !isChecked) {
             flatNode.children.forEach((child) => {
-                console.log(child);
                 this.toggleChecked(child, isChecked, checkModel, true, true);
             });
         }
